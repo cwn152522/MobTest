@@ -15,6 +15,8 @@
 		BE7395482058CBD900D42B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7395462058CBD900D42B5C /* LaunchScreen.storyboard */; };
 		BE7395532058CBD900D42B5C /* MOBTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7395522058CBD900D42B5C /* MOBTestTests.m */; };
 		BE73955E2058CBD900D42B5C /* MOBTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE73955D2058CBD900D42B5C /* MOBTestUITests.m */; };
+		BE73956E2058E37300D42B5C /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE73956C2058E37300D42B5C /* TabBarViewController.m */; };
+		BE73956F2058E37300D42B5C /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE73956D2058E37300D42B5C /* TabBarViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		BE7395592058CBD900D42B5C /* MOBTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOBTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE73955D2058CBD900D42B5C /* MOBTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MOBTestUITests.m; sourceTree = "<group>"; };
 		BE73955F2058CBDA00D42B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE73956B2058E37300D42B5C /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		BE73956C2058E37300D42B5C /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		BE73956D2058E37300D42B5C /* TabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
+		BE7395702058E44D00D42B5C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +115,11 @@
 				BE7395442058CBD900D42B5C /* Assets.xcassets */,
 				BE7395462058CBD900D42B5C /* LaunchScreen.storyboard */,
 				BE7395492058CBD900D42B5C /* Info.plist */,
+				BE73956B2058E37300D42B5C /* TabBarViewController.h */,
+				BE73956C2058E37300D42B5C /* TabBarViewController.m */,
+				BE73956D2058E37300D42B5C /* TabBarViewController.xib */,
 				BE7395382058CBD900D42B5C /* Supporting Files */,
+				BE7395702058E44D00D42B5C /* PrefixHeader.pch */,
 			);
 			path = MOBTest;
 			sourceTree = "<group>";
@@ -249,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE73956F2058E37300D42B5C /* TabBarViewController.xib in Resources */,
 				BE7395482058CBD900D42B5C /* LaunchScreen.storyboard in Resources */,
 				BE7395452058CBD900D42B5C /* Assets.xcassets in Resources */,
 				BE7395432058CBD900D42B5C /* Main.storyboard in Resources */,
@@ -276,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE73956E2058E37300D42B5C /* TabBarViewController.m in Sources */,
 				BE7395402058CBD900D42B5C /* ViewController.m in Sources */,
 				BE73953D2058CBD900D42B5C /* AppDelegate.m in Sources */,
 				BE73953A2058CBD900D42B5C /* main.m in Sources */,
@@ -428,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P6247WX9N5;
+				GCC_PREFIX_HEADER = MOBTest/PrefixHeader.pch;
 				INFOPLIST_FILE = MOBTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dongjin.MOBTest;
@@ -440,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P6247WX9N5;
+				GCC_PREFIX_HEADER = MOBTest/PrefixHeader.pch;
 				INFOPLIST_FILE = MOBTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dongjin.MOBTest;
