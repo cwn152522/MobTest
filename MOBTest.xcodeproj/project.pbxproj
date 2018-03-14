@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0D15500CDB8281B1B205A535 /* libPods-MOBTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11485DDA0D40205D22D4F3F9 /* libPods-MOBTest.a */; };
+		BE5315BB20594F1600DB0A30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5315B920594F1600DB0A30 /* ViewController.m */; };
+		BE5315BC20594F1600DB0A30 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE5315BA20594F1600DB0A30 /* ViewController.xib */; };
+		BE5315BF20594FF900DB0A30 /* UIViewController+Based.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5315BE20594FF900DB0A30 /* UIViewController+Based.m */; };
+		BE5315C22059501100DB0A30 /* LLNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5315C12059501100DB0A30 /* LLNavigationView.m */; };
 		BE73953A2058CBD900D42B5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7395392058CBD900D42B5C /* main.m */; };
 		BE73953D2058CBD900D42B5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE73953C2058CBD900D42B5C /* AppDelegate.m */; };
-		BE7395402058CBD900D42B5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE73953F2058CBD900D42B5C /* ViewController.m */; };
-		BE7395432058CBD900D42B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7395412058CBD900D42B5C /* Main.storyboard */; };
 		BE7395452058CBD900D42B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7395442058CBD900D42B5C /* Assets.xcassets */; };
 		BE7395482058CBD900D42B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7395462058CBD900D42B5C /* LaunchScreen.storyboard */; };
 		BE7395532058CBD900D42B5C /* MOBTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7395522058CBD900D42B5C /* MOBTestTests.m */; };
@@ -40,13 +42,17 @@
 /* Begin PBXFileReference section */
 		11485DDA0D40205D22D4F3F9 /* libPods-MOBTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MOBTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19EC0778EA455636F5BBB773 /* Pods-MOBTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOBTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MOBTest/Pods-MOBTest.debug.xcconfig"; sourceTree = "<group>"; };
+		BE5315B820594F1600DB0A30 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE5315B920594F1600DB0A30 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE5315BA20594F1600DB0A30 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		BE5315BD20594FF900DB0A30 /* UIViewController+Based.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Based.h"; sourceTree = "<group>"; };
+		BE5315BE20594FF900DB0A30 /* UIViewController+Based.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Based.m"; sourceTree = "<group>"; };
+		BE5315C02059501100DB0A30 /* LLNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNavigationView.h; sourceTree = "<group>"; };
+		BE5315C12059501100DB0A30 /* LLNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNavigationView.m; sourceTree = "<group>"; };
 		BE7395352058CBD900D42B5C /* MOBTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOBTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7395392058CBD900D42B5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE73953B2058CBD900D42B5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE73953C2058CBD900D42B5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BE73953E2058CBD900D42B5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BE73953F2058CBD900D42B5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BE7395422058CBD900D42B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE7395442058CBD900D42B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE7395472058CBD900D42B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE7395492058CBD900D42B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,15 +130,19 @@
 			children = (
 				BE73953B2058CBD900D42B5C /* AppDelegate.h */,
 				BE73953C2058CBD900D42B5C /* AppDelegate.m */,
-				BE73953E2058CBD900D42B5C /* ViewController.h */,
-				BE73953F2058CBD900D42B5C /* ViewController.m */,
-				BE7395412058CBD900D42B5C /* Main.storyboard */,
+				BE5315B820594F1600DB0A30 /* ViewController.h */,
+				BE5315B920594F1600DB0A30 /* ViewController.m */,
+				BE5315BA20594F1600DB0A30 /* ViewController.xib */,
 				BE7395442058CBD900D42B5C /* Assets.xcassets */,
 				BE7395462058CBD900D42B5C /* LaunchScreen.storyboard */,
 				BE7395492058CBD900D42B5C /* Info.plist */,
 				BE73956B2058E37300D42B5C /* TabBarViewController.h */,
 				BE73956C2058E37300D42B5C /* TabBarViewController.m */,
 				BE73956D2058E37300D42B5C /* TabBarViewController.xib */,
+				BE5315BD20594FF900DB0A30 /* UIViewController+Based.h */,
+				BE5315BE20594FF900DB0A30 /* UIViewController+Based.m */,
+				BE5315C02059501100DB0A30 /* LLNavigationView.h */,
+				BE5315C12059501100DB0A30 /* LLNavigationView.m */,
 				BE7395382058CBD900D42B5C /* Supporting Files */,
 				BE7395702058E44D00D42B5C /* PrefixHeader.pch */,
 			);
@@ -288,8 +298,8 @@
 			files = (
 				BE73956F2058E37300D42B5C /* TabBarViewController.xib in Resources */,
 				BE7395482058CBD900D42B5C /* LaunchScreen.storyboard in Resources */,
+				BE5315BC20594F1600DB0A30 /* ViewController.xib in Resources */,
 				BE7395452058CBD900D42B5C /* Assets.xcassets in Resources */,
-				BE7395432058CBD900D42B5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,9 +375,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5315C22059501100DB0A30 /* LLNavigationView.m in Sources */,
 				BE73956E2058E37300D42B5C /* TabBarViewController.m in Sources */,
-				BE7395402058CBD900D42B5C /* ViewController.m in Sources */,
 				BE73953D2058CBD900D42B5C /* AppDelegate.m in Sources */,
+				BE5315BB20594F1600DB0A30 /* ViewController.m in Sources */,
+				BE5315BF20594FF900DB0A30 /* UIViewController+Based.m in Sources */,
 				BE73953A2058CBD900D42B5C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,14 +416,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BE7395412058CBD900D42B5C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BE7395422058CBD900D42B5C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BE7395462058CBD900D42B5C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -610,6 +614,7 @@
 				BE7395642058CBDA00D42B5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE7395652058CBDA00D42B5C /* Build configuration list for PBXNativeTarget "MOBTestTests" */ = {
 			isa = XCConfigurationList;
@@ -618,6 +623,7 @@
 				BE7395672058CBDA00D42B5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE7395682058CBDA00D42B5C /* Build configuration list for PBXNativeTarget "MOBTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -626,6 +632,7 @@
 				BE73956A2058CBDA00D42B5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

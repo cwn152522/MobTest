@@ -17,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    ViewController *v1 = [ViewController new];
+    v1.tabBarItem.title = @"登录";
+    ViewController *v2 = [ViewController new];
+    v2.tabBarItem.title = @"分享";
+    ViewController *v3 = [ViewController new];
+    v3.tabBarItem.title = @"聊天";
+    ViewController *v4 = [ViewController new];
+    v4.tabBarItem.title = @"统计";
+    [self setViewControllers :@[v1, v2, v3, v4]];
     // Do any additional setup after loading the view from its nib.
 }
 

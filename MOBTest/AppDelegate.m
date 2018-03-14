@@ -19,6 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     TabBarViewController *tab = [TabBarViewController new];
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     self.window.rootViewController = tab;
     [self.window makeKeyAndVisible];
     return YES;
