@@ -10,6 +10,8 @@
 #define PrefixHeader_pch
 
 #import <UIView+CWNView.h>
+#import "UIView+AdjustFrame.h"
+#import "UIViewController+Based.h"
 
 // 获取屏幕 宽度、高度，支持横屏
 #define kScreenWidth ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.width)
