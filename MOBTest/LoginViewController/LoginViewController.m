@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "MYAutoScaleView.h"
+#import "LoginInterfaceViewController.h"
 
 @interface LoginViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -48,6 +49,7 @@
 }
 - (void)configNavigationBar{
     self.automaticallyAdjustsScrollViewInsets = YES;
+    self.isNeedGoBack = YES;
     [self.navigationBar setTitle:self.title leftText:nil rightImage:nil];
     self.navigationBar.backgroundColor = [UIColor clearColor];
 }
@@ -100,6 +102,10 @@
 }
 
 #pragma mark - <************************** 点击事件 **************************>
+- (IBAction)onClickMSMBtn:(UIButton *)sender {
+    LoginInterfaceViewController *loginVc = [LoginInterfaceViewController new];
+    [self presentViewController:loginVc animated:YES completion:nil];
+}
 
 
 

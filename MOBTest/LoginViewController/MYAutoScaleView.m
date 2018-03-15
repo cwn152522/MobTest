@@ -8,20 +8,21 @@
 
 #import "MYAutoScaleView.h"
 @interface MYAutoScaleView()
-@property (strong, nonatomic) UIScrollView *scrollview;
+@property (weak, nonatomic) UIScrollView *scrollview;
 @property (strong, nonatomic) NSLayoutConstraint *top;
 @end
 
 @implementation MYAutoScaleView
 
 - (void)dealloc{
-    [self removeObserver:self.scrollview forKeyPath:@"contentOffset.y"];
+    if(self.scrollview)
+        [self removeObserver:self.scrollview forKeyPath:@"contentOffset"];
 }
 
 - (void)setContentView:(UIView *)contentView scrollview:(UIScrollView *)scrollview{
     [contentView removeFromSuperview];
     self.scrollview = scrollview;
-    [scrollview addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+    [self.scrollview addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
     [self addSubview:contentView];
     WeakObj(self);
     [contentView cwn_makeConstraints:^(UIView *maker) {

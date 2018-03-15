@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0D15500CDB8281B1B205A535 /* libPods-MOBTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11485DDA0D40205D22D4F3F9 /* libPods-MOBTest.a */; };
 		BE2DBDF8205A3873000BD704 /* MYAutoScaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2DBDF7205A3873000BD704 /* MYAutoScaleView.m */; };
+		BE2DBDFB205A90DC000BD704 /* SMSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2DBDFA205A90DC000BD704 /* SMSManager.m */; };
+		BE2DBDFF205A9465000BD704 /* LoginInterfaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2DBDFD205A9465000BD704 /* LoginInterfaceViewController.m */; };
+		BE2DBE00205A9465000BD704 /* LoginInterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE2DBDFE205A9465000BD704 /* LoginInterfaceViewController.xib */; };
 		BE543E65205A0576003011CB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE543E51205A0576003011CB /* LoginViewController.m */; };
 		BE543E66205A0576003011CB /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE543E52205A0576003011CB /* LoginViewController.xib */; };
 		BE543E67205A0576003011CB /* UIView+AdjustFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = BE543E56205A0576003011CB /* UIView+AdjustFrame.m */; };
@@ -49,6 +52,11 @@
 		19EC0778EA455636F5BBB773 /* Pods-MOBTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MOBTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MOBTest/Pods-MOBTest.debug.xcconfig"; sourceTree = "<group>"; };
 		BE2DBDF6205A3873000BD704 /* MYAutoScaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAutoScaleView.h; sourceTree = "<group>"; };
 		BE2DBDF7205A3873000BD704 /* MYAutoScaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAutoScaleView.m; sourceTree = "<group>"; };
+		BE2DBDF9205A90DC000BD704 /* SMSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSManager.h; sourceTree = "<group>"; };
+		BE2DBDFA205A90DC000BD704 /* SMSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSManager.m; sourceTree = "<group>"; };
+		BE2DBDFC205A9465000BD704 /* LoginInterfaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginInterfaceViewController.h; sourceTree = "<group>"; };
+		BE2DBDFD205A9465000BD704 /* LoginInterfaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginInterfaceViewController.m; sourceTree = "<group>"; };
+		BE2DBDFE205A9465000BD704 /* LoginInterfaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginInterfaceViewController.xib; sourceTree = "<group>"; };
 		BE543E50205A0576003011CB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		BE543E51205A0576003011CB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		BE543E52205A0576003011CB /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -124,6 +132,9 @@
 				BE543E52205A0576003011CB /* LoginViewController.xib */,
 				BE2DBDF6205A3873000BD704 /* MYAutoScaleView.h */,
 				BE2DBDF7205A3873000BD704 /* MYAutoScaleView.m */,
+				BE2DBDFC205A9465000BD704 /* LoginInterfaceViewController.h */,
+				BE2DBDFD205A9465000BD704 /* LoginInterfaceViewController.m */,
+				BE2DBDFE205A9465000BD704 /* LoginInterfaceViewController.xib */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -135,6 +146,8 @@
 				BE543E54205A0576003011CB /* Category */,
 				BE543E5B205A0576003011CB /* View */,
 				BE543E5E205A0576003011CB /* ViewController */,
+				BE2DBDF9205A90DC000BD704 /* SMSManager.h */,
+				BE2DBDFA205A90DC000BD704 /* SMSManager.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -368,6 +381,7 @@
 				BE543E72205A0781003011CB /* TabBarViewController.xib in Resources */,
 				BE543E6D205A0576003011CB /* ViewController.xib in Resources */,
 				BE7395482058CBD900D42B5C /* LaunchScreen.storyboard in Resources */,
+				BE2DBE00205A9465000BD704 /* LoginInterfaceViewController.xib in Resources */,
 				BE7395452058CBD900D42B5C /* Assets.xcassets in Resources */,
 				BE543E74205A193D003011CB /* timg.jpg in Resources */,
 				BE543E66205A0576003011CB /* LoginViewController.xib in Resources */,
@@ -448,6 +462,7 @@
 			files = (
 				BE543E69205A0576003011CB /* LLNavigationView.m in Sources */,
 				BE2DBDF8205A3873000BD704 /* MYAutoScaleView.m in Sources */,
+				BE2DBDFF205A9465000BD704 /* LoginInterfaceViewController.m in Sources */,
 				BE73953D2058CBD900D42B5C /* AppDelegate.m in Sources */,
 				BE543E6C205A0576003011CB /* ViewController.m in Sources */,
 				BE543E67205A0576003011CB /* UIView+AdjustFrame.m in Sources */,
@@ -455,6 +470,7 @@
 				BE73953A2058CBD900D42B5C /* main.m in Sources */,
 				BE543E68205A0576003011CB /* UIViewController+Based.m in Sources */,
 				BE543E65205A0576003011CB /* LoginViewController.m in Sources */,
+				BE2DBDFB205A90DC000BD704 /* SMSManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

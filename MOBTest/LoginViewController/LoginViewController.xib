@@ -65,6 +65,9 @@
                             <integer key="value" value="23"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onClickMSMBtn:" destination="-1" eventType="touchUpInside" id="pRN-i5-PrP"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>

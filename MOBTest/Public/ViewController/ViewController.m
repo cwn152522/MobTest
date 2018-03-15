@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LoginViewController.h"
 
 @interface ViewController ()
 
@@ -42,7 +43,7 @@
     [self configNavigationBar];
 }
 - (void)configNavigationBar{
-    [self.navigationBar setTitle:self.title leftText:nil rightImage:nil];
+    [self.navigationBar setTitle:self.title leftText:@"跳转" rightImage:nil];
 }
 
 #pragma mark - <*********************** 初始化控件/数据 **********************>
@@ -51,7 +52,10 @@
 
 
 #pragma mark - <************************** 代理方法 **************************>
-
+- (void)navigationViewLeftClickEvent{
+    LoginViewController *vc = [LoginViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 
 
