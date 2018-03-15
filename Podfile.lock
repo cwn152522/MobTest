@@ -14,16 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - MOBFoundation (3.1.2)
   - MYAutoLayout (1.0.0)
+  - SMSSDK (3.0.1):
+    - MOBFoundation
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - MYAutoLayout (~> 1.0.0)
+  - SMSSDK (~> 3.0.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  MOBFoundation: 5c7cd437320b5252ebe0ca20283cc1ffe66f7669
   MYAutoLayout: 53c79ab80864f9c8ce3217d1fcc95168b91f80bf
+  SMSSDK: a811c8ea6e89393097037b7cf6493248a40e50f0
 
-PODFILE CHECKSUM: ddbfacf9b60af377ffd3bd024924c37825a05f7c
+PODFILE CHECKSUM: e0c6a9b08a71e6f37afa733c043ae02412aa410c
 
 COCOAPODS: 1.4.0

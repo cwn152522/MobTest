@@ -13,6 +13,9 @@
 #import "UIView+AdjustFrame.h"
 #import "UIViewController+Based.h"
 
+#define MOB_AppKey @"24a5d1d7cebee"
+#define MOB_AppSecret @"59125b79680a831ef9abe4b3ffeb1bce"
+
 // 获取屏幕 宽度、高度，支持横屏
 #define kScreenWidth ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.width)
 #define kScreenHeight ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.height)

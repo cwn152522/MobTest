@@ -8,6 +8,7 @@
 
 #import "TabBarViewController.h"
 #import "ViewController.h"
+#import "LoginViewController.h"
 
 @interface TabBarViewController ()
 
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSDictionary *vc1 = @{
-                         @"vc": NSStringFromClass([ViewController class]),
+                         @"vc": NSStringFromClass([LoginViewController class]),
                          @"title" : @"登录",
                          @"color":[UIColor groupTableViewBackgroundColor]
                          };

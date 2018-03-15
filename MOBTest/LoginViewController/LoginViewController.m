@@ -7,8 +7,12 @@
 //
 
 #import "LoginViewController.h"
+#import "MYAutoScaleView.h"
 
-@interface LoginViewController ()
+@interface LoginViewController ()<UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIView *topView;
 
 @end
 
@@ -40,10 +44,36 @@
 // !!!: 配置视图
 -(void)initUI{
     [self configNavigationBar];
+    [self configTableView];
 }
 - (void)configNavigationBar{
+    self.automaticallyAdjustsScrollViewInsets = YES;
     [self.navigationBar setTitle:self.title leftText:nil rightImage:nil];
+    self.navigationBar.backgroundColor = [UIColor clearColor];
 }
+- (void)configTableView{
+    self.tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    self.tableView.showsVerticalScrollIndicator = NO;
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    MYAutoScaleView *scale = [[MYAutoScaleView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 175)];
+    [scale setContentView:self.topView scrollview:self.tableView];
+    self.tableView.tableHeaderView = scale;
+//    [self.view addSubview:scale];
+    
+//    [self.tableView registerNib:[UINib nibWithNibName:@"ADepartmentSubVCTableViewCell" bundle:nil] forCellReuseIdentifier:kAssociateDepartmentSubVCId];
+    
+    //    self.tableView.tableHeaderView = self.tableHeaderView;
+    
+//    self.tableModel = [[ADepartmentSubVCTableModel alloc] initWithCellIdentifier:kAssociateDepartmentSubVCId withHeaderIdentifier:nil configureCellBlock:^(ADepartmentSubVCTableViewCell *tableViewCell, id item, NSIndexPath *indexPath) {
+//        //        [tableViewCell loadWithData:item indexPath:indexPath];
+//    } withCellClass:nil];
+//    
+//    self.tableView.dataSource = self.tableModel;
+}
+
 
 #pragma mark - <*********************** 初始化控件/数据 **********************>
 
@@ -51,9 +81,23 @@
 
 
 #pragma mark - <************************** 代理方法 **************************>
+#pragma mark UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 100;
+}
 
-
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellid"];
+    if(cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellid"];
+    }
+    [cell.textLabel setText:[NSString stringWithFormat:@"这是第%ld行", indexPath.row]];
+    return cell;
+}
 
 #pragma mark - <************************** 点击事件 **************************>
 
