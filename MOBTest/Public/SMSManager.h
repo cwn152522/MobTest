@@ -11,7 +11,7 @@
 
 @interface SMSManager : NSObject
 //获取短信验证码
-- (void)getVerificationCodeByMethod:(SMSGetCodeMethod)method phoneNumber:(NSString *)phoneNumber result:(void(^)(NSError *error))result;
++ (void)getVerificationCodeByMethod:(SMSGetCodeMethod)method phoneNumber:(NSString *)phoneNumber result:(void(^)(NSError *error))result;
 //验证验证码
 +(void)commitVerificationCode:(NSString *)code phoneNumber:(NSString *)phoneNumber result:(void(^)(NSError *error))result;
 @end

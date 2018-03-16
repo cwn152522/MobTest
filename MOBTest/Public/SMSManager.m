@@ -21,7 +21,7 @@
         {
             // error
             if(result)
-                result([NSError errorWithDomain:@"获取验证码失败" code:-111 userInfo:nil]);
+                result(error);
         }
     }];
 }
@@ -39,7 +39,7 @@
         {
             // error
             if(result)
-                result([NSError errorWithDomain:@"请求失败" code:-111 userInfo:nil]);
+                result(error);
         }
     }];
 }
